@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
+/* 基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 每個 section 的樣式 */
+section {
+  background-color: #e9ecef; /* 亮灰色背景 */
+  border: 1px solid #ddd; /* 輕微邊框 */
+  border-radius: 8px; /* 圓角邊框 */
+  padding: 1.5rem; /* 內邊距 */
+  margin-bottom: 1.5rem; /* 下方邊距 */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 標題樣式 */
+.introduce h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.introduce h2,
+.introduce h3 {
+  color: #666;
 }
 
-.card {
-  padding: 2em;
+/* 程式語言、聯絡方式及大學經歷 */
+h4 {
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+  color: #646cff;
 }
 
-.read-the-docs {
-  color: #888;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+}
+
+/* 遊戲部分 */
+.game {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.game img {
+  margin-left: 1rem;
+}
+
+/* 遊戲資訊表格 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* 留言部分 */
+.comments section {
+  margin-top: 1.5rem;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
 }
